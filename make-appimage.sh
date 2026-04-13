@@ -10,6 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=DUMMY
 export DESKTOP=DUMMY
 export MAIN_BIN=postal1
+export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/postal1
