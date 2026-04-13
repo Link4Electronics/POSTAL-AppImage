@@ -29,5 +29,5 @@ mkdir -p ./AppDir/bin
 cd ./POSTAL
 patch -Np1 -i ../fixes.patch
 make -j$(nproc)
-mv -v postal1-x86_64 ../AppDir/bin
+mv -v bin/postal1-x86_64 ../AppDir/bin
 mv -v DefaultPostal.ini ../AppDir/bin/POSTAL.INI
