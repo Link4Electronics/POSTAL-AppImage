@@ -28,6 +28,9 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cd ./POSTAL
 patch -Np1 -i ../fixes.patch
+if [ "$ARCH" = "x86_64" ]; then
+    sed 
+fi
 make -j$(nproc)
 mv -v bin/postal1-$ARCH ../AppDir/bin/postal1
 mv -v DefaultPostal.ini ../AppDir/bin/POSTAL.INI
