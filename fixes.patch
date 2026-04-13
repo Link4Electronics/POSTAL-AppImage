@@ -13,17 +13,3 @@ index a71bd88..366d817 100644
  #define RSP_JOY_BUT_18			0x00020000
  #define RSP_JOY_BUT_19			0x00040000
  #define RSP_JOY_BUT_20			0x00080000
-
-diff --git a/RSPiX/Src/BLUE/unix/Bdisp.cpp a/RSPiX/Src/BLUE/unix/Bdisp.cpp
-index 48a8d2b..e09b237 100644
---- a/RSPiX/Src/BLUE/unix/Bdisp.cpp
-+++ a/RSPiX/Src/BLUE/unix/Bdisp.cpp
-@@ -749,7 +749,7 @@ extern int16_t rspSetVideoMode(	// Returns 0 if successfull, non-zero otherwise
-         #if defined(MORPHOS)
-         sdlTexture = SDL_CreateTexture(sdlRenderer, SDL_PIXELFORMAT_BGRA8888, SDL_TEXTUREACCESS_STREAMING, FramebufferWidth, FramebufferHeight);
-         #else
--        sdlTexture = SDL_CreateTexture(sdlRenderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, FramebufferWidth, FramebufferHeight);
-+        sdlTexture = SDL_CreateTexture(sdlRenderer, SDL_PIXELFORMAT_BGRA8888, SDL_TEXTUREACCESS_STREAMING, FramebufferWidth, FramebufferHeight);
-         #endif
-         if (!sdlTexture)
-         {
