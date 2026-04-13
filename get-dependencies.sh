@@ -33,5 +33,5 @@ if [ "$ARCH" = "aarch64" ]; then
 fi
 make -j$(nproc)
 mv -v bin/postal1-$ARCH ../AppDir/bin/postal1
-sed -i '/DeviceBufTime = 200/a DeviceRate = 22050\nDeviceBits = 16' DefaultPostal.ini
+sed -i -e '/DeviceBufTime = 200/a DeviceRate = 22050\nDeviceBits = 16' -e 's|File = res\\levels\\realms.ini|File = res/levels/postal_plus_realms.ini|' DefaultPostal.ini
 mv -v DefaultPostal.ini ../AppDir/bin/POSTAL.INI
