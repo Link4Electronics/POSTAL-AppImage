@@ -28,7 +28,7 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cd ./POSTAL
 patch -Np1 -i ../fixes.patch
-if [ "$ARCH" = "x86_64" ]; then
+if [ "$ARCH" = "aarch64" ]; then
     sed -i 's|CLIENTEXE := $(BINDIR)/postal1-x86_64|CLIENTEXE := $(BINDIR)/postal1-aarch64|' makefile
 fi
 make -j$(nproc)
