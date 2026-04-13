@@ -17,7 +17,7 @@
 
 </div>
 
-## ⚠️ Game assets within `~/.local/share/PostalPlus` ⚠️
+## ⚠️ Place `res` and `title` game assets within `~/.local/share/PostalPlus` ⚠️
 
 ---
 
