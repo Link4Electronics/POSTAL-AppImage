@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=POSTAL
+Comment=Postal quirky FPS shooter
+Exec=postal1
+Icon=postal
+Terminal=false
+StartupNotify=false
+StartupWMClass=postal1
+Categories=Application;Game;Shooting;Mature;
