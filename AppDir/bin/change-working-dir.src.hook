@@ -1,5 +1,5 @@
 #!/bin/sh
-dir=${XDG_DATA_HOME:-~/.local/share}/PostalPlus
+dir=$DATADIR/PostalPlus
 mkdir -p "$dir"
 if [ ! -f "$dir"/POSTAL.INI ]; then
   cp -r "$APPDIR"/bin/POSTAL.INI "$dir"
